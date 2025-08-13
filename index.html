@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sana Khalifeh — Portfolio</title>
+  <meta name="description" content="Projects by Sana Khalifeh — front‑end, DevOps, security.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0b0d10; --fg: #e7edf3; --muted:#9fb0c0; --card:#12161b; --accent:#6aa6ff; --ring:#2a3340;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:var(--bg);color:var(--fg);font-family: Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:32px}
+    header{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin-bottom:24px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .avatar{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,#1a73e8,#a855f7);display:grid;place-items:center;font-weight:800}
+    .avatar span{color:white}
+    h1{font-size:28px;margin:0}
+    .tagline{color:var(--muted);font-size:14px;margin-top:4px}
+    .actions{display:flex;gap:10px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;background:#1a2330;border:1px solid var(--ring);color:var(--fg);text-decoration:none}
+    .btn:hover{border-color:#3a475a}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+    .card{grid-column:span 12;background:var(--card);border:1px solid var(--ring);border-radius:16px;padding:18px;transition:transform .15s ease, box-shadow .15s ease}
+    .card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.25)}
+    .card h3{margin:4px 0 6px;font-size:18px}
+    .meta{color:var(--muted);font-size:13px;margin-bottom:10px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .chip{font-size:12px;padding:6px 10px;border-radius:999px;background:#17202b;border:1px solid var(--ring);color:#cfe0f7}
+    .card .links{display:flex;gap:12px;margin-top:12px}
+    .section-title{margin:26px 0 14px;font-size:20px}
+    footer{margin-top:36px;color:var(--muted);font-size:13px;border-top:1px solid var(--ring);padding-top:18px}
+    @media (min-width:700px){
+      .card{grid-column:span 6}
+    }
+    @media (min-width:1024px){
+      .card{grid-column:span 4}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar" aria-hidden="true"><span>SK</span></div>
+        <div>
+          <h1>Sana Khalifeh</h1>
+          <div class="tagline">Front‑End • DevOps • Security | CSUN</div>
+        </div>
+      </div>
+      <nav class="actions">
+        <a class="btn" href="mailto:SanaKhalifeh@icloud.com">Email</a>
+        <a class="btn" href="https://github.com/sonnykh" target="_blank" rel="noopener">GitHub</a>
+         <a class="btn" href="www.linkedin.com/in/sana-khalifeh-038423250">LinkedIn</a> -->
+      </nav>
+    </header>
+
+    <h2 class="section-title">Projects</h2>
+    <section class="grid" aria-label="Projects list">
+      <!-- Project 1 -->
+      <article class="card">
+        <h3>Sana’s Casino (CIT384 Project 1)</h3>
+        <p class="meta">Front‑End • HTML/CSS</p>
+        <p>Multi‑page promotional site with navigation and themed branding. Built with semantic HTML5 and responsive CSS.</p>
+        <div class="chips">
+          <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">Responsive</span>
+        </div>
+        <div class="links">
+          <a class="btn" href="https://sonnykh.github.io/cit384_Project1/" target="_blank" rel="noopener">Live Demo</a>
+          <a class="btn" href="https://github.com/sonnykh/cit384_Project1" target="_blank" rel="noopener">Repository</a>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="card">
+        <h3>SONNY The Dino Tamagotchi (CIT384 Project 2)</h3>
+        <p class="meta">Front‑End • JavaScript</p>
+        <p>Interactive pet game with dynamic stats (weight, happiness, hunger) and actions (feed, play, exercise, adventure).</p>
+        <div class="chips">
+          <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
+        </div>
+        <div class="links">
+          <a class="btn" href="https://sonnykh.github.io/cit384_Project2/" target="_blank" rel="noopener">Live Demo</a>
+          <a class="btn" href="https://github.com/sonnykh/cit384_Project2" target="_blank" rel="noopener">Repository</a>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="card">
+        <h3>Sana’s CSUN Map Quiz (CIT384 Project 3)</h3>
+        <p class="meta">Front‑End • Maps API</p>
+        <p>Map‑based quiz that tests campus knowledge and demonstrates API integration and DOM interactions.</p>
+        <div class="chips">
+          <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Maps API</span>
+        </div>
+        <div class="links">
+          <a class="btn" href="https://sonnykh.github.io/384_Project3/" target="_blank" rel="noopener">Live Demo</a>
+          <a class="btn" href="https://github.com/sonnykh/384_Project3" target="_blank" rel="noopener">Repository</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>CampusCupid — Full Stack & Cloud Security</h3>
+        <p class="meta">DevOps • QA • Graphic Design</p>
+        <p>Multi‑feature campus platform (CampusCupid, StudyBuddy, CampusSocial). Hardened with AWS WAF/Shield, IDS (Snort, CrowdStrike), MFA, and policy framework.</p>
+        <div class="chips">
+          <span class="chip">AWS</span><span class="chip">WAF</span><span class="chip">CloudFront</span><span class="chip">Snort</span><span class="chip">CrowdStrike</span>
+        </div>
+        <div class="links">
+          <a class="btn" href="#" onclick="alert('Demo available upon request');return false;">Demo (on request)</a>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> Sana Khalifeh • Los Angeles, CA</div>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
