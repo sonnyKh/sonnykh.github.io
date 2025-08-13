@@ -1,5 +1,5 @@
 # Sana Khalifeh — Portfolio
-
+ 
 A personal portfolio website showcasing selected projects in front-end development, DevOps, and security.  
 Built to provide recruiters and employers with an easy way to view my work and technical skills.
 
